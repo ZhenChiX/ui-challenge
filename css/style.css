@@ -1,0 +1,171 @@
+body {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+#mobile-h2 {
+    display: none;
+}
+
+#ui ul {
+    display: grid;
+    /* grid-auto-columns:minmax(150px,auto); */
+    /* grid-auto-rows:minmax(150px,auto); */
+    grid-template-areas: "a a a a a" "b c c d d" "b e f g h" "b i i i i";
+}
+
+li {
+    display: block;
+    outline: 1px solid black;
+    /* box-sizing: content-box; */
+    /* padding: 10px auto; */
+    text-align: center;
+}
+
+#a {
+    grid-area: a;
+    display: grid;
+    background-image: url("http://via.placeholder.com/960x100");
+    background-size: cover;
+    background-repeat: none;
+    background-size: 100% 100%;
+    height: 100px;
+}
+
+#b {
+    grid-area: b;
+    display: grid;
+    background-image: url("http://via.placeholder.com/200x600");
+    background-size: cover;
+    height: 600px;
+}
+
+#c {
+    grid-area: c;
+    display: grid;
+    background-image: url("http://via.placeholder.com/380x200");
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+#d {
+    grid-area: d;
+    display: grid;
+    /* background-image: url("http://via.placeholder.com/380x200"); */
+    background-image: url("http://demi.dog/3.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 200px;
+}
+
+#e {
+    grid-area: e;
+    display: grid;
+    /* background-image: url("http://via.placeholder.com/190x250"); */
+    background-image: url("http://demi.dog/1.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#f {
+    grid-area: f;
+    display: block;
+    background-image: url("http://via.placeholder.com/190x250");
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#g {
+    grid-area: g;
+    display: grid;
+    background-image: url("http://via.placeholder.com/190x250");
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#h {
+    grid-area: h;
+    display: grid;
+    /* background-image: url("http://via.placeholder.com/190x250"); */
+    background-image: url("http://demi.dog/2.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#i {
+    grid-area: i;
+    display: grid;
+    background-image: url("http://via.placeholder.com/760x150");
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 150px;
+}
+
+@media only screen and (max-width: 480px) {
+    li {
+        color: red;
+    }
+    body {
+        max-width: 480px;
+        margin: 0px auto;
+    }
+    #desktop-h2 {
+        display: none;
+    }
+    #mobile-h2 {
+        display: block;
+        color: red;
+        
+    }
+    #ui ul {
+        /* display: block; */
+        display: grid;
+        /* grid-auto-columns:minmax(px,auto); */
+        grid-auto-rows: minmax(75px, auto);
+        grid-template-areas: "a a" "b b" "c c" "d d" "e f" "e f" "g h" "g h" "i i";
+    }
+    #a {
+        background-image: url("http://via.placeholder.com/480x75");
+        height: 75px;
+    }
+    #b {
+        background-image: url("http://via.placeholder.com/480x150");
+        height: 150px;
+    }
+    #c {
+        background-image: url("http://via.placeholder.com/480x125");
+        height: 125px;
+    }
+    #d {
+        /* background-image: url("http://via.placeholder.com/480x125"); */
+        background-image: url("http://demi.dog/3.jpg");
+        height: 125px;
+    }
+    #e {
+        /* background-image: url("http://via.placeholder.com/240x250"); */
+        background-image: url("http://demi.dog/1.jpg");
+        height: 250px;
+    }
+    #f {
+        background-image: url("http://via.placeholder.com/240x250");
+        height: 250px;
+    }
+    #g {
+        background-image: url("http://via.placeholder.com/240x250");
+        height: 250px;
+    }
+    #h {
+        /* background-image: url("http://via.placeholder.com/240x250"); */
+        background-image: url("http://demi.dog/2.jpg");
+        height: 250px;
+    }
+    #i {
+        background-image: url("http://via.placeholder.com/480x80");
+        height: 80px;
+    }
+}
